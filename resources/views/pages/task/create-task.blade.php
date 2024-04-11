@@ -49,6 +49,7 @@
                                             <select class="select2 filter-module" name="project"
                                                 data-placeholder="Select a Project" data-dropdown-css-class="select2-purple"
                                                 style="width: 100%;">
+                                                <option value="">Select a Project</option>
                                                 @forelse ($projects as $project)
                                                     <option value="{{ $project->id }}"
                                                         @if (is_array(old('project')) && in_array($project->id, old('project'))) selected @endif>
